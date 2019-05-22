@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/22 14:23:23 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/22 14:32:29 by jkwayiba         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <string.h>
 
-int	ft_strlen(char *str)
+int		ft_strlen(char *str)
 {
 	int i;
 
@@ -14,15 +26,11 @@ int	ft_strlen(char *str)
 
 char	*ft_strcat(char *dest, char *src)
 {
-	//make ptr point to the end of the destination string
-	char *ptr = dest + ft_strlen(dest);
-	
-	//append characters of src to the destination string 
+	char *ptr;
+
+	*ptr = dest + ft_strlen(dest);
 	while (*src != '\0')
 		*ptr++ = *src++;
-
-	//null terminate destination string 
 	*ptr = '\0';
-
 	return (dest);
 }
