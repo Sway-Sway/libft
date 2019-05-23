@@ -1,30 +1,19 @@
-#include <stdlib.h>
-#include <errno.h>
-
-char	*ft_strcpy(char *dest, char *stc)
-{
-	int i;
-	int len;
-
-	i = 0;
-	len = 0;
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-	len++;
-	while (i < len)
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
-}
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/05/23 09:23:10 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/23 09:30:54 by jkwayiba         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 char	*ft_strdup(char *src)
 {
-	int i;
-	char *str;
+	int		i;
+	char	*str;
 
 	i = 0;
 	if (src == NULL)
@@ -39,6 +28,6 @@ char	*ft_strdup(char *src)
 		errno = ENOMEM;
 		return (NULL);
 	}
-	ft_strcpy(str,src);
+	ft_strcpy(str, src);
 	return (str);
 }
