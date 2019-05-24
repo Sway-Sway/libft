@@ -6,13 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:40:18 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 08:46:39 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:07:31 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-void	ft_memset(void *s, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t len)
 {
 	unsigned char *ptr;
 

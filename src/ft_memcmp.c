@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:42:47 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/22 14:43:49 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 09:51:51 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int	memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char *p1;
 	const unsigned char *p2;

@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:51:50 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 08:54:35 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 09:53:30 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	char		*dp;
 	const char	*sp;

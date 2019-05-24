@@ -6,13 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:28:17 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 11:33:32 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:54:48 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-char	*strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	size_t n;
 
