@@ -6,23 +6,9 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:23:23 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/22 14:32:29 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:16:28 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
-
-int		ft_strlen(char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
-}
 
 char	*ft_strcat(char *dest, char *src)
 {
