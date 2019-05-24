@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 09:38:32 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 09:46:48 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/05/23 09:21:12 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/23 09:22:12 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-char	*strncpy(char *dest, const char *src, size_t n)
+int	ft_strlen(char *str)
 {
-	size_t i;
+	int i;
 
 	i = 0;
-	while ((i < n) && (src[i] != '\0'))
+	while (str[i] != '\0')
 	{
-		dest++ = src++;
-	}
-	while (i < n)
-	{
-		dest[i] != '\0';
 		i++;
 	}
-	return (dest);
+	return (i);
 }

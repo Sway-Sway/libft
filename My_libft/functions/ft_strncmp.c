@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 12:26:57 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 12:29:37 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/05/23 12:30:55 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/24 08:13:46 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strcmp(char *s1, char *s2)
-{
-	int i;
-	int s1_total;
-	int s2_total;
+#include <string.h>
 
-	i = 0;
-	s1_total = 0;
-	s2_total = 0;
-	while (s1[i] != '\0')
-	{
-		if (s1[i] != s2[i])
-		{
-			s1_total = s1[i];
-			s2_total = s2[i];
-			break ;
-		}
-		i++;
-	}
-	return (s1_total - s2_total);
+int	strncmp(const char *s1, const char *s2, size_t n)
+{
+	while (n--)
+		if (*s1++ != *s2++)
+			return (*(unsigned char*)(s1 - 1) - *(unsigned char*)(s2 - 1));
+	return (0);
 }

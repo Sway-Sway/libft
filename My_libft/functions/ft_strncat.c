@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 08:51:50 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 08:53:20 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/05/23 09:50:37 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/23 09:54:28 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-void	*memcpy(void *dest, const void *src, size_t n)
+char	*strncat(char *dest, const char *src, size_t n)
 {
-	char		*dp;
-	const char	*sp;
+	char *ret;
 
-	*dp = dest;
-	*sp = src;
+	*ret = dest;
+	while (*dest)
+		dest++;
 	while (n--)
-		*dp++ = *sp++;
-	return (dest);
+		if (!(*dest++ = *src++))
+			return (ret);
+	*dest = 0;
+	return (ret);
 }

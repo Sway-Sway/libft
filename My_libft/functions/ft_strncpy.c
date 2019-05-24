@@ -1,21 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/23 12:30:55 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 08:10:37 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/05/23 09:38:32 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/23 09:47:47 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-int	strncmp(const char *s1, const char *s2, size_t n)
+char	*strncpy(char *dest, const char *src, size_t n)
 {
-	while (n--)
-		if (*s1++ != *s2++)
-			return (*(unsigned char*)(s1 - 1) - *(unsigned char*)(s2 - 1));
-	return (0);
+	size_t i;
+
+	i = 0;
+	while ((i < n) && (src[i] != '\0'))
+	{
+		dest++ = src++;
+	}
+	while (i < n)
+	{
+		dest[i] != '\0';
+		i++;
+	}
+	return (dest);
 }
