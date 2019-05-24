@@ -6,18 +6,18 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:57:57 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 09:18:07 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:02:48 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	*ft_memmove(void *dest, void const *src, size_t n)
 {
-	char *dest2;
-
-	dest2 = (char*)malloc(sizeof(char) * n + 1);
-	dest2[n + 1] = '\0';
-	ft_memcpy(dest2, src, n);
-	ft_memcpy(dest, dest2, n);
-	free(dest2);
+	if (dest == NULL && src == NULL)
+		return (NULL);
+	if (dest < src)
+		ft_memcpy(dest, src, n);
+	else
+		while (n--)
+			*(unsigned char *)(dest + n) = *(unsigned char *)(src + n);
 	return (dest);
 }
