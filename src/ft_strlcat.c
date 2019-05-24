@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 10:34:25 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 10:32:57 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:42:57 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 size_t	ft_strlcat(char *dest, char const *src, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:21:12 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 10:35:46 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:43:38 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 int	ft_strlen(char *str)
 {

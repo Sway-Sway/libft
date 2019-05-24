@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:28:17 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 10:54:48 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:50:57 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 char	*ft_strstr(const char *s1, const char *s2)
 {

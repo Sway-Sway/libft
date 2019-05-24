@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:23:10 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 09:30:54 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:41:40 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libdth.h"
 
 char	*ft_strdup(char *src)
 {

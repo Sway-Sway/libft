@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 08:36:53 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 10:08:59 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:33:10 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 void	ft_putchar(char c)
 {

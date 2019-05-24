@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 12:06:25 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/22 12:07:09 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:55:02 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 int	ft_toupper(int c)
 {

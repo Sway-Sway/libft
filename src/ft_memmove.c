@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:57:57 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 10:02:48 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 14:31:16 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 void	*ft_memmove(void *dest, void const *src, size_t n)
 {
