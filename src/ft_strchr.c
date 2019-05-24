@@ -6,11 +6,9 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 10:57:15 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/23 10:58:19 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/24 10:18:11 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <string.h>
 
 char	*strchr(const char *s, int c)
 {
