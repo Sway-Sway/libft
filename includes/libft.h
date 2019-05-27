@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:27:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 11:02:03 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/27 10:44:13 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,15 +44,16 @@ void	ft_putstr(char *str);
 char	*ft_strcat(char *dest, char *src);
 char	*ft_strchr(const char *s, int c);
 int		ft_strcmp(char *s1, char *s2);
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strcpy(char *s1, char *s2);
 char	*ft_strdup(char *src);
 size_t	ft_strlcat(char *dest, char const *src, size_t n);
-int		ft_strlen(char *str);
+int		ft_strlen(const char *str);
 char	*ft_strncat(char *dest, const char *src, size_t n);
 char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 char	*ft_strrchr(char const *str, int c);
-char	*ft_strstr(const char *s1, const char *s2);
+char	*ft_strstr(const char *haystack, const char *needle);
 void	ft_swap(int *a, int *b);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
