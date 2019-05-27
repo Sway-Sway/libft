@@ -6,30 +6,26 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 12:26:57 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 14:39:47 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/27 14:28:26 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-int		ft_strcmp(char *s1, char *s2)
+int		ft_strcmp(const char *s1,const char *s2)
 {
 	int i;
-	int s1_total;
-	int s2_total;
+	unsigned const char *s1_total;
+	unsigned const char *s2_total;
 
+	s1_total = (unsigned const char *)s1;
+	s2_total = (unsigned const char *)s2;
 	i = 0;
-	s1_total = 0;
-	s2_total = 0;
-	while (s1[i] != '\0')
+	while (s1_total[i] != '\0' && s2_total[i] != '\0')
 	{
-		if (s1[i] != s2[i])
-		{
-			s1_total = s1[i];
-			s2_total = s2[i];
-			break ;
-		}
+		if (s1_total[i] != s2_total[i])
+			break;
 		i++;
 	}
-	return (s1_total - s2_total);
+	return (s1_total[i] - s2_total[i]);
 }
