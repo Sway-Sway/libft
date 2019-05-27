@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 10:57:15 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 14:38:31 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/27 10:53:43 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	while (*s != (char)c)
 		if (!*s++)
