@@ -6,9 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/27 16:46:50 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 10:41:33 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/28 11:06:32 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../includes/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {
