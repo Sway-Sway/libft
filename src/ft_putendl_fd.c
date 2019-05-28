@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 16:55:18 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 10:44:14 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/05/28 08:31:32 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/05/28 10:31:02 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar_fd(char c, int fd)
+void	ft_putendl_fd(char const *s, int fd)
 {
-	write(fd, &c, 1);
+	ft_putstr_fd(s, fd);
+	ft_putchar('\n', fd);
 }

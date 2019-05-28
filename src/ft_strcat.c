@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:23:23 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/27 08:32:20 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/28 10:43:33 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strcat(char *dest, char *src)
 	int dest_len;
 	int src_len;
 	int i;
-	
+
 	dest_len = 0;
 	src_len = 0;
 	i = 0;
