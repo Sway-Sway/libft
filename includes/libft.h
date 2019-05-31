@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:27:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 11:10:45 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/05/31 10:48:39 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,9 @@ char	*ft_strncpy(char *dest, const char *src, size_t n);
 char	*ft_strnstr(const char *s1, const char *s2, size_t len);
 char	*ft_strrchr(char const *str, int c);
 char	*ft_strstr(const char *haystack, const char *needle);
+size_t	ft_wordlen(char const *s, char c);
+size_t	ft_wordcount(char const *s, char c);
+char	**ft_strsplit(char const *s, char c);
 void	ft_swap(int *a, int *b);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
