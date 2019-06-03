@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 15:58:25 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/03 16:45:42 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/03 17:22:39 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,33 +15,25 @@
 char	*ft_strtrim(char const *s)
 {
 	size_t i;
-	size_t j;
 	size_t k;
 	char *w;
 
 	i = 0;
-	j = 0;
-	if (!*s)
+	if (!s)
 		return (NULL);
-	while (*s)
-	{
-		if (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-			i++;
-		if (s[j - 1] == ' ' || s[j - 1] == 'n' || 
-				s[j - 1] == '\t' && s[j - 1] == '\0')
-			--j;
-	}
-	k = ft_strlen(s);	
-	k = k - i - j;
+	k = ft_strlen(s);
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
+		i++;
+	while (s[k - 1] == ' ' || s[k - 1] == 'n' || 
+			s[k - 1] == '\t' || s[k - 1] == '\0')
+		k--;
+	k = k - i;
 	if (!(w = (char *)malloc(sizeof(char) * (k + 1))))
 		return (NULL);
 	s += i;
-	i = 0;
-	while ( i < k )
-	{
+	i = -1;
+	while ( ++i < k )
 		w[i] = *s++;
-		i++;
-	}
-	w[i] == '\0';
+	w[i] = '\0';
 	return (w);
 }

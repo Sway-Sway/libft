@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:28:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/31 10:49:19 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/03 17:04:04 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ char	**strsplit(char const *s, char c)
 
 	i = 0;
 	j = 0;
+	k = 0;
 	if (!s || (!(w = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c))))))
 		return (NULL);
 	while (i < ft_wordcount(s, c))
