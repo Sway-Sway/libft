@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/31 10:28:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/03 17:04:04 by jkwayiba         ###   ########.fr       */
+/*   Created: 2019/06/03 15:58:25 by jkwayiba          #+#    #+#             */
+/*   Updated: 2019/06/03 17:22:39 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	**strsplit(char const *s, char c)
+char	*ft_strtrim(char const *s)
 {
 	size_t i;
-	size_t j;
 	size_t k;
-	char **w;
+	char *w;
 
 	i = 0;
-	j = 0;
-	k = 0;
-	if (!s || (!(w = (char **)malloc(sizeof(char *) * (ft_wordcount(s, c))))))
+	if (!s)
 		return (NULL);
-	while (i < ft_wordcount(s, c))
-	{
-		if(!(w[i] =(char *)malloc(sizeof(char) * (ft_wordlen(&s[k], c) + 1))))
-			return (NULL);
-		j = 0;
-		while (s[k] == c)
-			k++;
-		while (s[k] != c && s[k])
-			w[i][j++] = s[k++];
-		w[i][j] = '\0';
+	k = ft_strlen(s);
+	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
 		i++;
-	}
-	w[i] = NULL;
+	while (s[k - 1] == ' ' || s[k - 1] == 'n' || 
+			s[k - 1] == '\t' || s[k - 1] == '\0')
+		k--;
+	k = k - i;
+	if (!(w = (char *)malloc(sizeof(char) * (k + 1))))
+		return (NULL);
+	s += i;
+	i = -1;
+	while ( ++i < k )
+		w[i] = *s++;
+	w[i] = '\0';
 	return (w);
 }
