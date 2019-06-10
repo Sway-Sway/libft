@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:27:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/05 15:49:41 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/10 09:30:40 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, void const *src, size_t n);
 void	*ft_memset(void *s, int c, size_t len);
+void	*ft_memalloc(size_t size);
+void	ft_memdel(**ap);
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr(int nb);
@@ -65,7 +67,10 @@ char	**ft_strsplit(char const *s, char c);
 char	*ft_strtrim(char const *s);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_strnew(size_t size);
-void	*strclr(char *s);
+void	ft_strdel(char **as);
+void	*ft_strclr(char *s);
+void	ft_striter(char *s, void(*f)(char *));
+void	ft_striteri(char *s, void(*f)(unsigned int, char *));
 void	ft_swap(int *a, int *b);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
