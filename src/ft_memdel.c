@@ -6,17 +6,17 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 08:19:39 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/07 08:21:14 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/10 10:45:54 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_memdel(**ap)
+void	ft_memdel(void **ap)
 {
-	if(ap)
+	if (ap)
 	{
-		free(ap);
+		free(*ap);
 		*ap = NULL;
 	}
 }

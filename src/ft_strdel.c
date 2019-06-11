@@ -6,14 +6,17 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/07 08:23:40 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/07 08:25:01 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/10 10:50:40 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_strdel(**as)
+void	ft_strdel(char **as)
 {
 	if(as)
-		ft_memdel(as);
+	{
+		free(*as);
+		*as = NULL;
+	}
 }

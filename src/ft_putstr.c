@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 08:27:41 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 11:07:42 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:50:43 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	ft_putstr(char const *str)
 {
-	int i;
+	if (!(str))
+		return ;
+	write(1, str, ft_strlen(str));
+}
 
-	i = 0;
-	while (str[i] != '\0')
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+int	main(void)
+{
+	ft_putstr("I hope this works");
 }
