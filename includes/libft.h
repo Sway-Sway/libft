@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/24 09:27:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/10 09:30:40 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/12 10:03:13 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, void const *src, size_t n);
 void	*ft_memset(void *s, int c, size_t len);
 void	*ft_memalloc(size_t size);
-void	ft_memdel(**ap);
+void	ft_memdel(void **ap);
 void	ft_putchar(char c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putnbr(int nb);
@@ -71,6 +71,9 @@ void	ft_strdel(char **as);
 void	*ft_strclr(char *s);
 void	ft_striter(char *s, void(*f)(char *));
 void	ft_striteri(char *s, void(*f)(unsigned int, char *));
+char	*ft_strmap(const char *s, char (*f)(char));
+char	*ft_strmapi(const char *s, char(*f)(unsigned int, char));
+int		ft_strequ(const char *s1, const char *s2);
 void	ft_swap(int *a, int *b);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
