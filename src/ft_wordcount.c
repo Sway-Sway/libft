@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:04:47 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/31 10:16:38 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/13 09:34:00 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_wordcount(const char *s, char c)
 
 	i = 0;
 	w = 0;
+	if (!s)
+		return (0);
 	while (s[i])
 	{
 		if (s[i] != c)
