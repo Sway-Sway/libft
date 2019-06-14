@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:28:28 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/03 17:04:04 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/14 16:50:32 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-char	**strsplit(char const *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
 	size_t i;
 	size_t j;
