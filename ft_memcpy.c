@@ -6,11 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:51:50 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 16:48:34 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/17 15:30:08 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 void	*ft_memcpy(void *str1, const void *str2, size_t n)
 {
