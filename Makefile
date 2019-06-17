@@ -6,7 +6,7 @@
 #    By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/24 15:51:47 by jkwayiba          #+#    #+#              #
-#    Updated: 2019/06/17 15:07:23 by jkwayiba         ###   ########.fr        #
+#    Updated: 2019/06/17 15:51:56 by jkwayiba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 
 SRCS = ft_atoi.c \
 	   ft_bzero.c \
+	   ft_isalpha.c \
 	   ft_isalnum.c \
 	   ft_isascii.c \
 	   ft_isdigit.c \
@@ -71,6 +72,7 @@ INC = libft.h
 
 OUTPUT = ft_atoi.o \
 	   ft_bzero.o \
+	   ft_isalpha.o \
 	   ft_isalnum.o \
 	   ft_isascii.o \
 	   ft_isdigit.o \
@@ -127,7 +129,7 @@ OUTPUT = ft_atoi.o \
 all: $(NAME)
 
 $(NAME):
-		@gcc -Wall -Wall -Werror -Wextra -c $(SRCS) -I $(INC)
+		@gcc -Wall -Wall -Werror -Wextra -c $(SRCS) $(INC)
 		@ar rc $(NAME) $(OUTPUT)
 		@ranlib $(NAME)
 
