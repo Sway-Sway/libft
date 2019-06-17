@@ -6,11 +6,11 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 13:02:56 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 15:48:22 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/17 15:23:47 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 static int	counter(int i)
 {
