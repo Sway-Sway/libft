@@ -6,7 +6,7 @@
 #    By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/24 15:51:47 by jkwayiba          #+#    #+#              #
-#    Updated: 2019/06/18 09:21:29 by jkwayiba         ###   ########.fr        #
+#    Updated: 2019/06/18 14:27:25 by jkwayiba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,7 @@ SRCS = ft_atoi.c \
 	   ft_memdel.c \
 	   ft_memmove.c \
 	   ft_memset.c \
+	   ft_nbrlen.c \
 	   ft_putchar.c \
 	   ft_putchar_fd.c \
 	   ft_putendl.c \
@@ -86,6 +87,7 @@ OUTPUT = ft_atoi.o \
 	   ft_memdel.o \
 	   ft_memmove.o \
 	   ft_memset.o \
+	   ft_nbrlen.o \
 	   ft_putchar.o \
 	   ft_putchar_fd.o \
 	   ft_putendl.o \
