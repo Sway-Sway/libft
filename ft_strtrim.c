@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/03 15:58:25 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/18 11:19:00 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/18 16:56:19 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,25 +14,26 @@
 
 char	*ft_strtrim(char const *s)
 {
-	size_t	i;
-	size_t	k;
-	char	*w;
+	int		i;
+	int		len;
+	char	*result;
 
-	i = 0;
 	if (s == NULL)
 		return (NULL);
-	while ((s[i] == ' ' || s[i] == '\n' || s[i] == '\t') && (s[i] != '\0'))
-		i++;
-	k = ft_strlen(s);
-	if (i == k)
-		return (ft_strnew(0));
-	while (s[k - 1] == ' ' || s[k - 1] == 'n' ||
-			s[k - 1] == '\t' || s[k - 1] == '\0')
-		k--;
-	k = k - i;
-	if (!(w = ft_strnew(k)))
+	len = ft_strlen(s);
+	while (s[len - 1] == ' ' || s[len - 1] == '\t' || s[len - 1] == '\n')
+		len--;
+	i = -1;
+	while (s[++i] == ' ' || s[i] == '\t' || s[i] == '\n')
+		len--;
+	if (len <= 0)
+		len = 0;
+	if (!(result = (char*)malloc(sizeof(char) * (len + 1))))
 		return (NULL);
 	s += i;
-	ft_memmove(w, s, k);
-	return (w);
+	i = -1;
+	while (++i < len)
+		result[i] = *s++;
+	result[i] = '\0';
+	return (result);
 }
