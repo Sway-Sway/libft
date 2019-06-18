@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 13:02:56 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/18 10:43:53 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/18 11:16:32 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_itoa(int n)
 {
-	char 	*str;
+	char	*str;
 	int		len;
-	long 	nb;
+	long	nb;
 
 	nb = n;
 	len = ft_nbrlen(n);
@@ -35,9 +35,8 @@ char	*ft_itoa(int n)
 	}
 	while (n > 0)
 	{
-		str[len] = '0' + (n % 10);
+		str[len--] = '0' + (n % 10);
 		n = n / 10;
-		len--;
 	}
 	return (str);
 }
