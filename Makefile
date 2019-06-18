@@ -6,7 +6,7 @@
 #    By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/24 15:51:47 by jkwayiba          #+#    #+#              #
-#    Updated: 2019/06/17 15:51:56 by jkwayiba         ###   ########.fr        #
+#    Updated: 2019/06/18 09:21:29 by jkwayiba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -129,7 +129,7 @@ OUTPUT = ft_atoi.o \
 all: $(NAME)
 
 $(NAME):
-		@gcc -Wall -Wall -Werror -Wextra -c $(SRCS) $(INC)
+		@gcc -Wall -Wall -Werror -Wextra -c $(SRCS) -I $(INC)
 		@ar rc $(NAME) $(OUTPUT)
 		@ranlib $(NAME)
 

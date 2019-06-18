@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/10 13:20:24 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/13 14:24:39 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/18 10:44:42 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,5 @@ int		ft_strequ(const char *s1, const char *s2)
 {
 	if (!s1 || !s2)
 		return (0);
-	return (ft_strcmp(s1,s2) == 0);
+	return (ft_strcmp(s1, s2) == 0);
 }
-
