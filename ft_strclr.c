@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:39:45 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/18 10:45:09 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/19 17:35:35 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_strclr(char *s)
 {
-	if (!*s)
+	if (!s)
 		return (NULL);
 	ft_bzero(s, ft_strlen(s));
 	return (s);
