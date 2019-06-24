@@ -68,8 +68,7 @@ SRCS = ft_atoi.c \
 	   ft_toupper.c \
 	   ft_wordcount.c \
 	   ft_wordlen.c \
-
-INC = libft.h
+	   ft_strrev.c \
 
 OUTPUT = ft_atoi.o \
 	   ft_bzero.o \
@@ -127,11 +126,12 @@ OUTPUT = ft_atoi.o \
 	   ft_toupper.o \
 	   ft_wordcount.o \
 	   ft_wordlen.o \
+	   ft_strrev.o \
 
 all: $(NAME)
 
 $(NAME):
-		@gcc -Wall -Wall -Werror -Wextra -c $(SRCS) -I $(INC)
+		@gcc -Wall -Werror -Wextra -c $(SRCS) 
 		@ar rc $(NAME) $(OUTPUT)
 		@ranlib $(NAME)
 

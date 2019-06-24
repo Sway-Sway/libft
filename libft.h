@@ -18,12 +18,6 @@
 #include <errno.h>
 #include <string.h>
 
-typedef	struct	s_list
-{
-	void				*content;
-	size_t				content_size;
-	struct		s_list	*next;
-}										t_list;
 
 int		ft_atoi(char *str);
 void	ft_bzero(void *s, size_t n);
@@ -79,6 +73,7 @@ int		ft_strnequ(const char *s1, const char *s2, size_t n);
 char	*ft_strsub(const char *s, unsigned int start, size_t len);
 size_t	ft_nbrlen(long n);
 void	ft_swap(int *a, int *b);
+char	*ft_strrev(char *str);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 
