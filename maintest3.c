@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 15:20:10 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/19 15:20:19 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 13:51:16 by toto             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ int main(void)
 	result1 = ft_memccpy(test1, input1, c1, alloc1);
 	if ((result1 < &test1[0] || result1 > &test1[alloc1]) && result1)
 		printf("output not pointer to part of test or null");
-	memccpy(compare1, input1, c1, alloc1);
+	ft_memccpy(compare1, input1, c1, alloc1);
 
 	printf("memcmp:%d\n", memcmp(test1, compare1, alloc1));
 
@@ -123,20 +123,20 @@ int main(void)
 	compare5 = ft_memalloc(alloc5);
 
 	ft_memcpy(test5, input5, alloc5);
-	memcpy(compare5, input5, alloc5);
+	ft_memcpy(compare5, input5, alloc5);
 
 	if (test5 != ft_memmove(&test5[3], test5, len5))
 		printf("output pointer doesnt match input\n");
-	memmove(&compare5[3], compare5, len5);
+	ft_memmove(&compare5[3], compare5, len5);
 	printf("%s\n", test5);
 	printf("%s\n", compare5);
 
 	ft_memcpy(test5, input5, alloc5);
-	memcpy(compare5, input5, alloc5);
+	ft_memcpy(compare5, input5, alloc5);
 
 	if (test5 != ft_memmove(test5, &test5[3], len5))
 		printf("output pointer doesnt match input\n");
-	memmove(compare5, &compare5[3], len5);
+	ft_memmove(compare5, &compare5[3], len5);
 	printf("%s\n", test5);
 	printf("%s\n", compare5);
 
@@ -153,12 +153,12 @@ int main(void)
 	test6 = ft_memalloc(alloc6);
 	compare6 = ft_memalloc(alloc6);
 
-	memcpy(test6, input6, alloc6);
-	memcpy(compare6, input6, alloc6);
+	ft_memcpy(test6, input6, alloc6);
+	ft_memcpy(compare6, input6, alloc6);
 
 	if (test6 != ft_memset(test6, 'c', len6))
 		printf("output pointer doesnt match input\n");
-	memset(compare6, 'c', len6);
+	ft_memset(compare6, 'c', len6);
 	printf("%s\n", test6);
 	printf("%s\n", compare6);
 

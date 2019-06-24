@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 09:19:34 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/19 09:19:51 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 13:00:55 by toto             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ int main(void)
     printf("====================================\n");
     char src[50], dest[50];
 
-    ft_strcpy(src,  "This is source");
-    ft_strcpy(dest, "This is destination");
+    ft_strcpy(src,  "has met the source");
+    ft_strcpy(dest, "the destination ");
 
     ft_strcat(dest, src);
 
@@ -61,7 +61,7 @@ int main(void)
 
     ft_strcpy(str1, "abcdef");
     ft_strcpy(str2, "ABCDEF");
-    ft_strcpy(str3, "abcdef");
+    ft_strcpy(str3, "jklmnop");
 
     ret3 = ft_strcmp(str1, str2);
     ret4 = ft_strequ(str1, str3);
@@ -69,12 +69,12 @@ int main(void)
     if(ret3 < 0) {
         printf("str1 is less than str2");
     } else if(ret3 > 0) {
-        printf("str2 is less than str1");
+        printf("str2 is less than str1\n");
     } else {
         printf("str1 is equal to str2");
     }
     ft_putchar('\n');
-    if (ret4 == 0) {
+    if (ret4 != 0) {
         printf("They are equal");
     } else {
         printf("They are not equal");
@@ -84,7 +84,7 @@ int main(void)
     printf("STRDUP\n");
     printf("====================================\n");
 
-    char *str9 = "Helloworld";
+    char *str9 = "I am duplicated";
     char *result;
     result = ft_strdup(str9);
     printf("The string : %s\n", result);
@@ -93,8 +93,8 @@ int main(void)
     printf("STRJOIN\n");
     printf("====================================\n");
 
-    char *first = "First";
-    char *second = "Second";
+    char *first = "Join this";
+    char *second = "to this";
     char *last;
 
     last = ft_strjoin(first, second);
@@ -104,12 +104,12 @@ int main(void)
     printf("STRLEN\n");
     printf("====================================\n");
 
-    printf("%d\n", (int)ft_strlen("Hello"));
+    printf("%d\n", (int)ft_strlen("I should be 14"));
 
     printf("\n====================================\n");
     printf("STRREV\n");
     printf("====================================\n");
-    char s1[] = "HELLO";    // String Given
+    char s1[] = "WavySway";    // String Given
     char *s2;
     s2 = ft_strrev(s1);
     printf("%s\n", s2);
@@ -119,7 +119,7 @@ int main(void)
     printf("====================================\n");
     int i = 0;
 
-    char **arr = ft_strsplit("lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse", ' ');
+    char **arr = ft_strsplit("This,is,a,random,string,being,split", ',');
     while (arr[i] != '\0')
     {
         ft_putendl(arr[i]);
@@ -129,7 +129,7 @@ int main(void)
     printf("\n====================================\n");
     printf("STRTRIM\n");
     printf("====================================\n");
-    char *arr2 = ft_strtrim("    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse         ");
+    char *arr2 = ft_strtrim("  		Theres a bunch of space around me, get rid of it     ");
     printf("%s\n", arr2);
 
     return (0);

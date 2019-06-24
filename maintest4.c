@@ -6,7 +6,7 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/19 15:21:02 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/19 15:21:15 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 13:54:27 by toto             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -167,12 +167,12 @@ int main(void)
 	test = ft_memalloc(alloc);
 	compare = ft_memalloc(alloc);
 
-	memcpy(test, input, alloc);
-	memcpy(compare, input, alloc);
+	ft_memcpy(test, input, alloc);
+	ft_memcpy(compare, input, alloc);
 
 	ft_bzero(test, len);
-	bzero(compare, len);
-	printf("memcmp: %d\n", memcmp(test, compare, alloc));
+	ft_bzero(compare, len);
+	printf("memcmp: %d\n", ft_memcmp(test, compare, alloc));
 
    return (0);
 }
