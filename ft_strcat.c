@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/22 14:23:23 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/28 10:43:33 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 23:39:46 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *dest, char *src)
+char	*ft_strcat(char *dest, const char *src)
 {
 	int dest_len;
 	int src_len;

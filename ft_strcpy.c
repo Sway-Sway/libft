@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:34:34 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/27 11:53:35 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 23:42:03 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(char *s1, char *s2)
+char	*ft_strcpy(char *s1, const char *s2)
 {
 	int i;
 	int len;

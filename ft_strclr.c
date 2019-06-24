@@ -6,16 +6,15 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/05 15:39:45 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/19 17:35:35 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/25 00:32:08 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_strclr(char *s)
+void	ft_strclr(char *s)
 {
 	if (!s)
-		return (NULL);
+		return ;
 	ft_bzero(s, ft_strlen(s));
-	return (s);
 }

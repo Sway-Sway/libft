@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 11:13:39 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 14:49:22 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 23:41:06 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strrchr(char const *str, int c)
+char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
 	int	tmp;

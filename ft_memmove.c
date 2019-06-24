@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 08:57:57 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/05/24 14:31:16 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 23:37:51 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, void const *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	if (dest == NULL && src == NULL)
 		return (NULL);

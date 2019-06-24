@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/31 10:04:47 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/20 15:35:51 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/24 23:56:42 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_wordcount(const char *s, char c)
+size_t	ft_wordcount(char const *s, char c)
 {
 	size_t i;
 	size_t w;

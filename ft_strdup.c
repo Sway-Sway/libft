@@ -6,13 +6,13 @@
 /*   By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/23 09:23:10 by jkwayiba          #+#    #+#             */
-/*   Updated: 2019/06/20 15:51:40 by jkwayiba         ###   ########.fr       */
+/*   Updated: 2019/06/25 00:14:36 by jkwayiba         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(char *src)
+char	*ft_strdup(const char *src)
 {
 	int		i;
 	char	*str;
@@ -27,6 +27,6 @@ char	*ft_strdup(char *src)
 	{
 		return (NULL);
 	}
-	ft_strcpy(str, src);
+	ft_strcpy(str, (char *)src);
 	return (str);
 }
