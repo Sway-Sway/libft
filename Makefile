@@ -6,7 +6,7 @@
 #    By: jkwayiba <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/24 15:51:47 by jkwayiba          #+#    #+#              #
-#    Updated: 2019/06/18 14:27:25 by jkwayiba         ###   ########.fr        #
+#    Updated: 2019/07/05 00:26:19 by jkwayiba         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -131,14 +131,20 @@ OUTPUT = ft_atoi.o \
 all: $(NAME)
 
 $(NAME):
+		@echo	'\033[0;35m'	"Preparing to Stub the library"
 		@gcc -Wall -Werror -Wextra -c $(SRCS) 
 		@ar rc $(NAME) $(OUTPUT)
 		@ranlib $(NAME)
+		@echo	'\033[0;35m'	"Library Stubbed"
+		@echo	'\033[0;35m'	"Stub is life"
 
 clean: 
 	@/bin/rm -f $(OUTPUT)
+	@echo 	'\033[0;35m'	"Stubbing all .o"
 
 fclean: clean
 	@/bin/rm -f $(NAME)
+	@echo  '\033[0;35m'		"Stubbed out the .a"
 
 re: fclean all
+	@echo	'\033[0;35m'	"Keeping it Stub"
